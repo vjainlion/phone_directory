@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import Header from './component/header/header.component';
 
 class App extends Component {
   
@@ -7,17 +7,14 @@ class App extends Component {
   {
     return(
       <div>
-      { /*<div>
-          Phone Directory   
-        </div>
+       <Header/>
         <button>Add</button>
         <div>
         <span>Name</span><br/>
         <span>Phone</span>
-        </div>*/
-      }
-      <label htmlFor='Name'>Name:</label>
-        <input type='text' placeholder='type here' defaultValue='vaibhav'/>
+        </div>
+      
+   
       
       </div>
 
