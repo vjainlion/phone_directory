@@ -20,7 +20,7 @@
 .content
 {
 display: grid;
-grid-template-columns:40% 30% auto; 
+grid-template-columns:40% 30% 30%; 
  
 }
 .name_h,.phone_h
@@ -32,7 +32,18 @@ grid-template-columns:40% 30% auto;
   font-weight: bold;
 }
 .name,.phone{
-  margin: 10px 0 10px 20px;
-
- 
+  margin: 10px 0 15px 20px;
+}
+.deletebtn
+{
+  outline: none;
+  border: 0vh;
+  color: #000;
+  margin-top: 3px;
+  background-color:	#FA8072;
+  text-transform: uppercase;
+  padding: 5px;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
 }

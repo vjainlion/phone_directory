@@ -5,6 +5,19 @@ class App extends Component {
   
   render()
   {
+    const subscribers = [
+      {
+        id:1,
+        name:"Vaibhav",
+        phone:9929647262
+      },
+      {
+        id:2,
+        name:"Palak",
+        phone:9535443335
+      }
+
+    ]
     return(
       <div>
        <Header/>
@@ -14,20 +27,20 @@ class App extends Component {
         <span className="phone_h">Phone</span>
         </div>
       
-        <div className="content">
-        <span className="name">Shilphnfbfdbfdbfdb</span>
-        <span className="phone">9929647262</span>
-        </div>
-
-        <div className="content">
-        <span className="name">Prakhar</span>
-        <span className="phone">9829030356</span>
-        </div>
-   
+       
+        {
+          subscribers.map(sub =>{
+            return  <div key={sub.id} className="content">
+            <span className="name">{sub.name}</span>
+            <span className="phone">{sub.phone}</span>
+            <button className="deletebtn">DELETE</button>
+            </div>
+          })
+        }
       
       </div>
 
-    );
+    )
   }
 }
 
