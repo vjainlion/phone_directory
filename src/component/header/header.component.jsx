@@ -1,13 +1,10 @@
 import React from 'react';
 import './header.styles.css';
 
-const Header = () =>{
-
-    
-
+const Header = ({heading}) =>{
    return(
     <div  className='header'>
-    Phone Directory   
+    {heading}  
    </div>
    )
 }
