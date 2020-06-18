@@ -25,7 +25,7 @@ class AddSubscriber extends React.Component
     onFormSubmitted = (e) =>
     {
         e.preventDefault();
-        if(this.state.name!=='' || this.state.phone!=''){
+        if(this.state.name!=='' || this.state.phone!==''){
         this.props.addSubscriberHandler(this.state);
         this.setState({id:0,name:'',phone:''});
         this.props.history.push('/');

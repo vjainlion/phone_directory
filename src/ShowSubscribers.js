@@ -28,7 +28,7 @@ class ShowSubscribers extends Component {
             return  <div key={sub.id} className="content">
             <span className="name">{sub.name}</span>
             <span className="phone">{sub.phone}</span>
-            <button className="deletebtn">DELETE</button>
+            <button onClick={this.props.deleteSubscriber.bind(this,sub.id)} className="deletebtn">DELETE</button>
             </div>
           })
         }
