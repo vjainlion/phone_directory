@@ -6,7 +6,11 @@ import {Link} from 'react-router-dom';
 
 class ShowSubscribers extends Component {
 
-
+deleteSubs=(subId)=>
+{
+  this.props.deleteSubscriber(subId);
+  
+}
  
   render()
   {
@@ -28,7 +32,7 @@ class ShowSubscribers extends Component {
             return  <div key={sub.id} className="content">
             <span className="name">{sub.name}</span>
             <span className="phone">{sub.phone}</span>
-            <button onClick={this.props.deleteSubscriber.bind(this,sub.id)} className="deletebtn">DELETE</button>
+            <button onClick={this.deleteSubs.bind(this,sub.id)} className="deletebtn">DELETE</button>
             </div>
           })
         }
