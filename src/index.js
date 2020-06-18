@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ShowSubscribers from './ShowSubscribers';
 import './common/common.css';
-import AddSubscriber from './component/subscriber/subscriber.component.jsx';
 import PhoneDirectory from './component/PhoneDirectory/phoneDirectory.component';
 import * as serviceWorker from './serviceWorker';
 
