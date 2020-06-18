@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ShowSubscribers from './ShowSubscribers';
 import './common/common.css';
 import AddSubscriber from './component/subscriber/subscriber.component.jsx';
+import PhoneDirectory from './component/PhoneDirectory/phoneDirectory.component';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PhoneDirectory />
   </React.StrictMode>,
   document.getElementById('root')
 );

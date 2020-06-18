@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Header from './component/header/header.component';
-import './App.css';
+import './ShowSubscribers.css';
 
 const subscribers = [
   {
@@ -16,7 +16,7 @@ const subscribers = [
 
 ];
 
-class App extends Component {
+class ShowSubscribers extends Component {
 
 
   constructor()
@@ -49,7 +49,7 @@ class App extends Component {
       
        
         {
-           this.state.subscribersListToShow.map(sub =>{
+           this.props.subscribersListToShow.map(sub =>{
             return  <div key={sub.id} className="content">
             <span className="name">{sub.name}</span>
             <span className="phone">{sub.phone}</span>
@@ -68,4 +68,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ShowSubscribers;
